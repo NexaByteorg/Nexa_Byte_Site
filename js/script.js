@@ -62,3 +62,14 @@ function page_show(id) {
 
 
 }
+
+
+function nav_close() {
+
+    if (document.getElementById("checkbox").checked == true) {
+
+
+        document.getElementById("chechboxlabel").click();
+    }
+}
+
