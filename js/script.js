@@ -50,18 +50,18 @@ function submit_btn() {
 
 // ===========================================================================
 
-function page_show(id) {
+// function page_show(id) {
 
-    document.getElementsByClassName("nav-link")[0].style.color = "";
-    document.getElementsByClassName("nav-link")[1].style.color = "";
-    document.getElementsByClassName("nav-link")[2].style.color = "";
-    document.getElementsByClassName("nav-link")[3].style.color = "";
-
-
-    document.getElementsByClassName("nav-link")[id].style.color = "yellow";
+//     document.getElementsByClassName("nav-link")[0].style.color = "";
+//     document.getElementsByClassName("nav-link")[1].style.color = "";
+//     document.getElementsByClassName("nav-link")[2].style.color = "";
+//     document.getElementsByClassName("nav-link")[3].style.color = "";
 
 
-}
+//     document.getElementsByClassName("nav-link")[id].style.color = "yellow";
+
+
+// }
 
 
 function nav_close() {
@@ -73,3 +73,31 @@ function nav_close() {
     }
 }
 
+
+
+
+
+
+
+
+
+function pagecall(id, ind) {
+
+    const xyz = document.getElementById(id);
+
+    xyz.addEventListener("mouseenter", function () {
+        document.getElementsByClassName("nav-link")[ind].style.color = "yellow";
+
+    });
+    xyz.addEventListener("mouseleave", function () {
+        document.getElementsByClassName("nav-link")[ind].style.color = "";
+
+    });
+
+
+}
+
+pagecall("home", 0);
+pagecall("about", 1);
+pagecall("programmes", 2);
+pagecall("contact", 3);
