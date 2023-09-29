@@ -3,11 +3,6 @@ document.getElementById("submit-btn").style.display = "none";
 document.getElementById("loder").style.display = "none";
 document.getElementById("thanks_msg").style.display = "none";
 
-setTimeout(() => {
-
-    window.open("https://forms.gle/DoY7nNnAPz1mMThv5", "_blank");
-}, 5000);
-
 document.querySelector("form").addEventListener("input", () => {
 
     if (document.getElementById("inputName4").value.trim() != "" && document.getElementById("inputEmail4").value.trim() != "" && document.getElementById("inputNumber4").value.trim() != "" && document.getElementById("inputState").value.trim() != "" && document.getElementById("inputMessage").value.trim() != "") {
