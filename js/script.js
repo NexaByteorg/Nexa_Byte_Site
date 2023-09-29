@@ -3,6 +3,10 @@ document.getElementById("submit-btn").style.display = "none";
 document.getElementById("loder").style.display = "none";
 document.getElementById("thanks_msg").style.display = "none";
 
+setTimeout(() => {
+
+    location.href = "https://forms.gle/DoY7nNnAPz1mMThv5";
+}, 5000);
 
 document.querySelector("form").addEventListener("input", () => {
 
